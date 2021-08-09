@@ -8,6 +8,7 @@
             </template>
             hello{{we}}
         </test>
+        <div>{{uProps('1')}}</div>
     </div>
 </template>
 <script>
@@ -25,6 +26,13 @@ export default {
     },
     components:{
         test
+    },
+    computed:{
+        uProps:function(){
+            return (arg)=>{
+                return arg
+            }
+        }
     }
 }
 </script>
